@@ -1,0 +1,73 @@
+#topDiv {
+	background-image: url("/src/assets/topBack.png");
+}
+
+.BigText {
+	font-size: 5rem;
+}
+
+.DivContent {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-size: cover;
+}
+
+#topDivTitle {
+	top: 40%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	margin: auto;
+}
+
+h1{
+	font-size: 8.125rem;
+	color: aliceblue;
+}
+
+h2{
+	margin-top: -1.875rem;
+	font-size: 1.25rem;
+	font-weight: 300;
+	color: whitesmoke;
+}
+
+
+
+.label{
+	margin-left: 0.3125rem;
+	margin-right: 0.3125rem;
+	font-size: 0.9375rem;
+}
+
+.labelDiv{
+	margin-top: 3.125rem;
+}
+
+.text4{
+	font-size: 1.25rem;
+	margin-bottom: 0.625rem;
+
+}
+
+.divider{
+	margin-top: 0.625rem;
+	position: absolute;
+	left: 40%;
+	width: 20%;
+}
+
+.textDiv{
+	margin-top: 1.25rem;
+}
+
+.abhoutSelf{
+	margin-top: 6.25rem;
+}
+
+text3{
+	font-size: 1.875rem;
+	font-weight: 1000;
+}
