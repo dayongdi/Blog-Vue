@@ -13,6 +13,14 @@
 	background-size: cover;
 }
 
+.board{
+	width: 100%;
+	height: 50%;
+	text-align: center;
+	background-color: antiquewhite;
+}
+
+
 #topDivTitle {
 	top: 25%;
 	bottom: 0;
@@ -70,4 +78,16 @@ h2{
 text3{
 	font-size: 1.875rem;
 	font-weight: 1000;
+}
+
+#note{
+		
+}
+
+.footDiv{
+	align-items: center;
+}
+
+.footBtn{
+	
 }

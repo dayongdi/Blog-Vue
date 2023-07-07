@@ -1,13 +1,14 @@
 <template>
 	<div id="topDiv" class="DivContent">
-		<my-nav></my-nav>
 		<div id="topDivTitle">
+			<myNav></myNav>
 			<h1>DYD</h1>
 			<h2>这里是dyd的个人空间</h2>
 		</div>
 	</div>
 	
 	<div class="DivContent">
+		
 		<div class="abhoutSelf">
 			<text3>关于我</text3>
 		</div>
@@ -41,16 +42,44 @@
 		</div>
 		
 	</div>
+
+
+
+	<div class="DivContent" id="note">
+		<div>
+			<v-btn>待完善</v-btn>
+		</div>
+	</div>
+	
+	
+	
+	<v-footer class="bg-grey-lighten-1">
+		<v-row justify="center" no-gutters>
+			<v-btn v-for="item in list" :key="item" class="mx-3 footBtn" rounded="xl" variant="text">
+				{{item}}
+			</v-btn>
+			
+			
+			
+		</v-row>
+	</v-footer>
+
 </template>
 
 
 
 <script>
 import myNav from '../components/myNav.vue';
+	
 	export default{
 		name:"indexView",
 		components:{
 			myNav
+		},
+		data() {
+			return{
+				list:["Home","链接1","test3","Services","Blog","Connection"]
+			}
 		}
 	}
 </script>
