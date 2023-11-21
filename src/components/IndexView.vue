@@ -1,5 +1,6 @@
 <template>
 	<div id="body">
+		
 		<v-app-bar>
 			<v-btn icon="$vuetify" id="toolbarTitle"></v-btn>
 			<v-spacer/>
@@ -23,20 +24,19 @@
 				<v-list-item><v-btn @click="scrollNote" class="dialogItem">日志</v-btn></v-list-item>
 				<v-list-item><v-btn @click="scrollBoard" class="dialogItem">未定义</v-btn></v-list-item>
 			</v-list>
-		</v-navigation-drawer>
+		</v-navigation-drawer>		
 		
 		
+		<div id="TopContentDiv">DYD</div>
 	</div>
 
 
-
 	<div id="aboutDiv" class="pageDiv">
+		<div class="marginDiv"></div>
 		<div class="text3">关于我</div>
-		
 		<div class="divider">
 			<v-divider :thickness="6" class="border-opacity-100 divider" color="success"/>
 		</div>
-		
 		<div id="aboutContentDiv">
 			<div class="text4">dyd也就是大永弟</div>
 			<div class="text4">🏠住广东汕头</div>
@@ -49,18 +49,33 @@
 			<div class="text4">再到新疆和内蒙看大草原吃大🍖</div>
 			<div class="text4">未来想</div>
 			<div class="text4">回到家乡有一家属于自己的小店</div>
-			<div class="text4">可以是超市，小吃店，也可以是书店</div>
-			<div class="text4">当然这都是26岁的我蠢蠢的白日梦😂</div>
+			<div class="text4">可以是彩票店，小吃店，也可以是水果店</div>
+			<!-- <div class="text4">当然这都是26岁的我蠢蠢的白日梦😂</div> -->
 		</div> 
 	</div>
 
-	<div id="noteDiv" class="pageDiv" style="background-color: yellow;">
-
+	<div id="noteDiv" class="pageDiv" style="background-color: whitesmoke;">
+		<div class="marginDiv"></div>
+		<div class="text3">日志</div>
+		
+		<div class="divider">
+			<v-divider :thickness="6" class="border-opacity-100 divider" color="success"/>
+		</div>
 	</div>
-
+	
+	
 	<div id="bottomDiv" class="pageDiv">
-
+		
+<!-- 		<v-footer class="bg-grey-lighten-1">
+			<v-row justify="center" no-gutters>
+				<v-btn v-for="item in list" :key="item" class="mx-3 footBtn" rounded="xl" variant="text">
+					{{item}}
+				</v-btn>
+			</v-row>
+		</v-footer> -->
 	</div>
+
+
 </template>
 
 
@@ -72,7 +87,7 @@
 		data() {
 			return {
 				drawer:null,
-				list: ["Home", "链接1", "test3", "Services", "Blog", "Connection"]
+				list: ["Home", "链接1", "test3"]
 			}
 		},
 		methods: {
@@ -88,8 +103,19 @@
 					behavior: 'smooth',
 					block:'center'
 				});
+			},
+			scrollNote(){
+				document.getElementById('noteDiv').scrollIntoView({
+					behavior: 'smooth',
+					block:'center'
+				});
+			},
+			scrollBoard(){
+				document.getElementById('bottomDiv').scrollIntoView({
+					behavior: 'smooth',
+					block:'center'
+				});
 			}
-			
 		}
 	}
 </script>
