@@ -28,33 +28,34 @@
 		
 		
 		<div id="TopContentDiv">DYD</div>
+		<div id="TopContentBottomDiv">/*这里是大永弟的个人空间*/</div>
 	</div>
 
 
-	<div id="aboutDiv" class="pageDiv">
-		<div class="marginDiv"></div>
-		<div class="text3">关于我</div>
-		<div class="divider">
-			<v-divider :thickness="6" class="border-opacity-100 divider" color="success"/>
-		</div>
-		<div id="aboutContentDiv">
-			<div class="text4">dyd也就是大永弟</div>
-			<div class="text4">🏠住广东汕头</div>
-			<div class="text4">喜欢舞美，爱🏊‍，更爱🎮</div>
-			<div class="text4">22年毕业于广东寄宿吃饭大学</div>
-			<div class="text4">目前在深圳</div>
-			<div class="text4">现在想</div>
-			<div class="text4">存点💰</div>
-			<div class="text4">买到心爱的🏍️骑行到西藏</div>
-			<div class="text4">再到新疆和内蒙看大草原吃大🍖</div>
-			<div class="text4">未来想</div>
-			<div class="text4">回到家乡有一家属于自己的小店</div>
-			<div class="text4">可以是彩票店，小吃店，也可以是水果店</div>
-			<!-- <div class="text4">当然这都是26岁的我蠢蠢的白日梦😂</div> -->
-		</div> 
+	<div id="aboutDiv" class="pageDiv content">
+			<div class="marginDiv"></div>
+			<div class="text3">关于我</div>
+			<div class="divider">
+				<v-divider :thickness="6" class="border-opacity-100 divider" color="success"/>
+			</div>
+			<div id="aboutContentDiv">
+				<div class="text4">dyd也就是大永弟</div>
+				<div class="text4">🏠住广东汕头</div>
+				<div class="text4">喜欢舞美，爱🏊‍，更爱🎮</div>
+				<div class="text4">22年毕业于广东寄宿吃饭大学</div>
+				<div class="text4">目前在深圳</div>
+				<div class="text4">现在想</div>
+				<div class="text4">存点💰</div>
+				<div class="text4">买到心爱的🏍️骑行到西藏</div>
+				<div class="text4">再到新疆和内蒙看大草原吃大🍖</div>
+				<div class="text4">未来想</div>
+				<div class="text4">回到家乡有一家属于自己的小店</div>
+				<div class="text4">可以是彩票店，小吃店，也可以是水果店</div>
+				<div class="text4">当然这都是26岁的我蠢蠢的梦想😂</div>
+			</div>
 	</div>
 
-	<div id="noteDiv" class="pageDiv" style="background-color: whitesmoke;">
+	<div id="noteDiv" class="pageDiv content" style="background-color: whitesmoke;">
 		<div class="marginDiv"></div>
 		<div class="text3">日志</div>
 		
@@ -64,7 +65,7 @@
 	</div>
 	
 	
-	<div id="bottomDiv" class="pageDiv">
+	<!-- <div id="bottomDiv" class="pageDiv"> -->
 		
 <!-- 		<v-footer class="bg-grey-lighten-1">
 			<v-row justify="center" no-gutters>
@@ -73,7 +74,7 @@
 				</v-btn>
 			</v-row>
 		</v-footer> -->
-	</div>
+	<!-- </div> -->
 
 
 </template>
@@ -115,6 +116,8 @@
 					behavior: 'smooth',
 					block:'center'
 				});
+			},
+			test(){
 			}
 		}
 	}
