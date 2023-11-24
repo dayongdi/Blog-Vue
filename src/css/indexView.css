@@ -6,12 +6,14 @@
 	background-size: cover;
 	background-position: center;
 	background-image: url('/src/assets/backgournd.png');
-	text-align: center;
 }
 
 .bigTitle{
-	margin-top: 30%;
-	font-size: 7.5rem;
+	position: absolute;
+	width: 100%;
+	top: 30%;
+	text-align: center;
+	font-size: 9.375rem;
 	font-weight: 1000;
 	color: white;
 }
