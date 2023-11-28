@@ -1,9 +1,18 @@
 <template>
 	<div class="contain">
 		<div class="bigTitle">DYD</div>
-		
-		
+		<div class="smallTitile">/*这里是大永弟的个人空间*/</div>
 	</div> 
+	
+	<div class="containDiv">
+		<div id="about" class="normalTitle">关于</div>
+		<div class="divider">
+			<v-divider :thickness="5" class="border-opacity-100 divider" color="success" />
+		</div >
+		
+	</div>
+
+	
 </template>
 
 

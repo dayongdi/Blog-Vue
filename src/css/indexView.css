@@ -6,14 +6,47 @@
 	background-size: cover;
 	background-position: center;
 	background-image: url('/src/assets/backgournd.png');
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .bigTitle{
-	position: absolute;
+	position: relative;
 	width: 100%;
-	top: 30%;
 	text-align: center;
-	font-size: 9.375rem;
+	font-size: 5.625rem;
 	font-weight: 1000;
 	color: white;
+}
+
+.smallTitile{
+	position: relative;
+	text-align: center;
+	font: size 0.875rem;
+	color: white;
+}
+
+.containDiv{
+	margin-top: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: whitesmoke;
+}
+
+.normalTitle{
+	margin-top: 1.875rem;
+	position: relative;
+	text-align: center;
+	font-size: 1.875rem;
+}
+
+.divider{
+	width: 6.25rem;
+	margin-top: 0.3125rem;
+	margin-bottom: 1rem;
 }
